@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 :root{
-    --light:#f6f6f9;
     --primary:#1976d2;
     --light-primary:#cfe8ff;
 }
@@ -12,12 +11,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* height: 100vh; */
-    /* background-color: var(--light); */
-    /* background-color: #1976d2; */
     font-family: "poppins",sans-serif;
-
-    /* background-image: url("bg.jpg"); */
     background-color: black;
     image-rendering: pixelated;
     background-repeat: no-repeat;
@@ -25,31 +19,15 @@ body{
     background-position: center;
     animation: animateBg 5s linear infinite;
 }
-
-
 .container{
-    /* background-image: url("images.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; */
-    
-
-    /*  */
     max-width: 1200px;
     width: 70%;
     height:70%;
     margin-top: 70px;
-    
     background-color: black;
-    /* background-color: var(--gray); */
     border-radius: 5px;
-    box-shadow: 10px solid aqua;
     overflow-x: hidden;
-    /* background: transparent; */
-    backdrop-filter: blur(10px);
-
-    /* border: 2px solid #3498db; */
-    border: 2px solid aqua;
-    box-shadow: 0 0 50px #0ef;
+     box-shadow: 0 0 50px #0ef;
 }
 .container:hover{
     animation: animate 1s linear infinite;
@@ -64,17 +42,9 @@ body{
     font-size: 2rem;
     text-align: center;
     color: white;
-    /* color: var(--dark); */
-
-
 }
-
 .error_message{
     background-color: var(--light-primary);
-    
-    /* background-color: var(--danger);
-    color: var(--light); */
-    
     color: black;
     text-align: center;
     padding: 1rem 0;
@@ -107,7 +77,7 @@ input::-webkit-input-placeholder {
 .ur_budget form input,.ur_expenses form input{
     padding: 0.4rem 1rem;
     width: 300px;
-    /* border: 1px solid #ddd; */
+
     color: white;
     font-family: inherit;
     font-size: 1rem;
@@ -115,31 +85,25 @@ input::-webkit-input-placeholder {
     border-radius: 3px;
     background: transparent;
     border: none;
-    border: 1px solid rgb(254, 17, 175);
-
+    border: 1px solid #1976d2;
 }
 .ur_budget form input:focus,.ur_expenses form input:focus{
     outline: none;
 }
 .ur_budget form,.ur_expenses form{
     position: relative;
-
 }
-.budget_content .btn{
-    /* position: absolute; */
+.btn{
     right: 0;
     outline: none;
     border: none;
     font-family: inherit;
     padding: 0.7rem 1rem;
-    /* color: var(--light); */
     color: white;
     border-top-right-radius: 5px;
     border-bottom-right-radius:5px ;
     cursor: pointer;
-    background-color: rgb(254, 17, 175)
-
-
+    background-color:#1976d2;
 }
 .budget_content .btn:active{
     transform: scale(0.98);
@@ -153,17 +117,13 @@ input::-webkit-input-placeholder {
 }
 .container .cards li{
     padding: 0.2rem 1rem;
-    /* background-color: var(--light); */
     background-color: #cfe8ff;
-    
     border-radius:5px;
     display: flex;
     align-items: center;
     gap: 1.5rem;
     cursor: pointer;
     transition: all 0.3s ease-in;
-
-
 }
 .container .cards li:hover{
     transform: translateY(-10px);
@@ -177,29 +137,14 @@ input::-webkit-input-placeholder {
     align-items: center;
     justify-content: center;
     margin:15px;
-
-    
-}
-.container .cards li:nth-child(1) .bx{
     background-color: #000;
     color: #1976d2;
-    color: white;
-}
-.container .cards li:nth-child(2) .bx{
-    background-color: #000;
-    color: #1976d2;
-    color: white;
-}
-.container .cards li:nth-child(3) .bx{
-    background-color: #000;
-    color: #1976d2;
-    color: white;
+    color: white;   
 }
 .container .cards li .info h3{
     font-size: 1.5rem;
     font-weight: 600;
-    color: black;
- 
+    color: black; 
 }
 .container .cards li .info p{
     color: #1976d2;
@@ -207,12 +152,8 @@ input::-webkit-input-placeholder {
 /* --------------------table content----- */
 .tbl_content{
     padding: 0.2rem;
-    background-color: #000;
-    background:transparent;
     color: white;
-    /* background-color: var(--light); */
     margin: 1rem 2rem;
-    border-radius: 5px;
 }
 .tbl_content h3{
     font-size: 1.4rem;
@@ -224,22 +165,16 @@ input::-webkit-input-placeholder {
     grid-template-columns: 1fr 50% 30% 8fr;
     align-items: center;
     background-color: #cfe8ff;
-    /* background-color: var(--dark); */
-    /* color: var(--light); */
-    color: var(--primary);
     padding: 0.5rem 1rem;
     border-radius: 5px;
     margin: 0.3rem 0;
     cursor: pointer;
     color: #000;
     font-size: 1rem;
-
-
 }
 .tbl_data{
     overflow-y: auto;
     height: 100px;
-
 }
 .tbl_tr_content button{
     outline: none;
@@ -248,16 +183,13 @@ input::-webkit-input-placeholder {
     padding: 0.4rem 1rem;
     border-radius: 5px;
     cursor: pointer;
-    background-color: rgb(41, 155, 39);
-    /* background-color: var(--danger); */
+    background-color:gray;  
 }
 .tbl_tr_content button:active{
     transform: scale(0.98);
 }
 .tbl_tr_content button:first-child{
-    background-color:rgb(14, 104, 148);
-    
-    /* background-color: var(--success); */
+    background-color:rgb(207, 18, 207);
 }
 
 /**---------------------------------------------------*/
@@ -302,7 +234,7 @@ input::-webkit-input-placeholder {
   
   /* No Button */
   #confirmNo {
-    background: gray;
+    background: green;
     color: white;
   }
   
@@ -311,64 +243,23 @@ input::-webkit-input-placeholder {
 
 @media (max-width: 1200px){
     .tbl_tr_content{
-    grid-template-columns: 1fr 40% 30% 11fr;
-  
-
-
+    grid-template-columns: 1fr 40% 30% 5fr;
 }
-  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media(max-width:850px){
-    .container{
-        width: 100%;
-        height: 100vh;
-        
-    }
-    .container .cards{
-        display: flex;
-        flex-direction: column;
-    }
-    .tbl_tr_content button{
-        display: flex;
-        flex-direction: column;
-    }
-} */
-@media (max-width: 850px) {
+@media (max-width: 870px) {
     body {
         flex-direction: column;
         justify-content: flex-start;
         padding: 1rem;
     }
-
     .container {
         width: 95%;
         margin: 1rem auto;
         border-radius: 8px;
         padding: 1rem;
     }
-
     .container h2 {
-        font-size: 3rem;
+        font-size: 2rem;
         padding: 1.5rem 0;
     }
 
@@ -383,7 +274,7 @@ input::-webkit-input-placeholder {
         width: 100%;
         margin: 0;
     }
-    .ur_budget{
+     .ur_budget{
         width: 100%;
     }
 
@@ -398,11 +289,11 @@ input::-webkit-input-placeholder {
     .container .cards {
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         grid-gap: 1rem;
-        padding: 1.5rem;
+        padding: 1.5rem ;
     }
 
     .container .cards li {
-        padding: 1.2rem;
+        padding: 0.2rem;
         gap: 1rem;
     }
 
@@ -429,63 +320,25 @@ input::-webkit-input-placeholder {
         font-size: 1.8rem;
         margin: 0.5rem 0;
     }
-
-    /* .tbl_tr_content {
-        grid-template-columns: 1fr 40% 25% 2fr;
-        font-size: 1rem;
-        padding: 0.3rem 0.8rem;
-    } */
-    
     .tbl_tr_content {
         grid-template-columns: 1fr 30% 30% 1fr; /* Adjust grid for buttons to fit better */
         gap: 0.5rem; /* Add spacing between elements */
     }
-   
-
-
-    /* .tbl_tr_content button {
-        padding: 0.3rem 0.8rem;
-        font-size: 0.9rem;
-    } */
     .tbl_tr_content button {
         padding: 0.3rem 0.6rem;
         font-size: 0.8rem;
         border-radius: 3px;
         width: 100%; /* Make buttons take full width on small screens */
         text-align: center;
+        margin:2px;
+         font-size: 0.85rem;
     }
-    .tbl_tr_content button:first-child {
-        background-color: rgb(14, 104, 148); /* Edit button */
-        font-size: 0.85rem;
-    }
-    .tbl_tr_content button:last-child {
-        background-color: rgb(255, 69, 58); /* Delete button */
-        font-size: 0.85rem;
-    }
-
     .tbl_data {
-        height: 120px;
+        height: 80px;
     }
 }
 
-/* ------------------------------------- */
-@media (max-width: 960px) {
-     #btn_expenses{
-      
-        
-        margin-right: 0;
-        outline: none;
-        border: none;
-        font-family: inherit;
-        
-        /* color: var(--light); */
-        color: white;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius:5px ;
-        cursor: pointer;
-        background-color: rgb(254, 17, 175)
-    }
-}
+
     
 
     
